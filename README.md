@@ -13,7 +13,7 @@ So far, all the tool does is enable you to set the length of one or more selecte
 
 ### How to use
 1. Click on one or more edge of a mesh in edit mode
-2. Click on "CAD Tools" Tab in the Tool Shelf (left panel in the 3D viewer viewport)
+2. Click on "CAD" Tab in the Tool Shelf (left panel in the 3D viewer viewport)
 3. Click "Set Edge Length"
 4. Set Edge Length in the bottom part of the panel, you can also set whether you want to extend/shorten the edge both ways or only to one side
 
