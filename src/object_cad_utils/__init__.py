@@ -40,13 +40,13 @@ class CustomPanel(bpy.types.Panel):
     bl_label = "Blender Caddie"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'TOOLS'
-    bl_category = "CAD Tools"
+    bl_category = "CAD"
 
     def draw(self, context):
         layout = self.layout
 
         row = layout.row()
-#        row.label(text="Add Objects:")
+        # row.label(text="Category Header")
 
         split = layout.split()
         col = split.column(align=True)
@@ -55,10 +55,10 @@ class CustomPanel(bpy.types.Panel):
         
 
 class Caddie(bpy.types.Operator):
-    """adding some CAD features to Blender."""      # blender will use this as a tooltip for menu items and buttons.
-    bl_idname = "mesh.blender_caddie"        # unique identifier for buttons and menu items to reference.
-    bl_label = "Blender Caddie"                 # display name in the interface.
-    bl_options = {'REGISTER', 'UNDO'}  # enable undo for the operator.
+    """Enabling some CAD features to Blender."""      # blender will use this as a tooltip for menu items and buttons.
+    bl_idname = "mesh.blender_caddie"                 # unique identifier for buttons and menu items to reference.
+    bl_label = "Blender Caddie"                       # display name in the interface.
+    bl_options = {'REGISTER', 'UNDO'}                 # enable undo for the operator.
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'TOOLS'
 
@@ -140,8 +140,6 @@ def menu_func(self, context):
 def register():
     bpy.utils.register_class(Caddie)
     bpy.utils.register_class(CustomPanel)
-    
-    
     
 
 def unregister():
