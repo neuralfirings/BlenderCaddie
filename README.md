@@ -1,7 +1,3 @@
-# BlenderCaddie
-CAD Tools for Blender
-
-## Goal
 We want to make precision models for 3D printing replacement parts and components. Think: hinges, remote control covers, broken headphone pieces, things like that.
 
 ## Instructions 
