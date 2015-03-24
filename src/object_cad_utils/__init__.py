@@ -23,8 +23,14 @@
 bl_info = {
     "name": "BlenderCaddie",
     "author": "neuralfirings",
+    "description": "Enabling CAD tools for Blender.",
+    "version": (0, 1),
+    "blender": (2, 72, 0),
+    "location": "View3D > Toolbox",
+    "warning": "", # used for warning icon and text in addons panel
     "tracker_url": "https://github.com/neuralfirings/BlenderCaddie",
-    "category": "Edit"
+    "wiki": "https://github.com/neuralfirings/BlenderCaddie/wiki",
+    "category": "Mesh",
 }
 
 
