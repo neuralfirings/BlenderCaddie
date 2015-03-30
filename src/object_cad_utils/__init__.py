@@ -111,8 +111,12 @@ class Caddie(bpy.types.Operator):
                     diff = target - old_dist
                     diffscale = target/old_dist-1
                     
-                    v1 = e.verts[0].co
-                    v2 = e.verts[1].co
+                    if (e.verts[1].co.z > e.verts[0].co.z) or (e.verts[1].co.y > e.verts[0].co.y) or (e.verts[1].co.x > e.verts[0].co.x):
+                        v1 = e.verts[0].co
+                        v2 = e.verts[1].co
+                    else:
+                        v1 = e.verts[1].co
+                        v2 = e.verts[0].co
                     
                     if type=="pos":
                         v2.x = v1.x + (v2.x-v1.x) * (1+diffscale)
